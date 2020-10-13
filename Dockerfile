@@ -37,7 +37,7 @@ RUN true \
 FROM base as build
 LABEL maintainer="Denys Zhdanov <denis.zhdanov@gmail.com>"
 
-ARG python_binary
+ARG python_binary=python3
 
 RUN true \
  && apk add --update \

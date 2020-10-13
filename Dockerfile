@@ -105,7 +105,7 @@ RUN . /opt/graphite/bin/activate \
  && $python_binary ./setup.py install
 
 # install statsd
-ARG statsd_version=0.8.6
+ARG statsd_version=0.9.0
 ARG statsd_repo=https://github.com/statsd/statsd.git
 WORKDIR /opt
 RUN git clone "${statsd_repo}" \
